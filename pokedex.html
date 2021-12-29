@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pokedex.css">
+    <title>JS n° 3 : Pokédex</title>
+</head>
+<body>
+    
+    <div class="pokedex">
+
+        <h1>Bienvenue dans le Pokédex !</h1>
+
+        <form class="pokedex-form">
+
+            <label for="recherche" class="label-recherche">Chercher un pokémon</label>
+            <input type="text" name="recherche" id="recherche">
+
+            <!-- <button class="btn-recherche">Rechercher</button> -->
+
+            <div class="loader">
+                <img src="/ressources/chargement.svg" alt="logo chargement">
+            </div>
+
+        </form>        
+
+        <div class="afficher-pokedex">
+
+            <div class="cases-container">
+
+            </div>
+    
+        </div>
+
+    </div>
+    
+    
+
+    <script src="scripts/pokedex.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Éléments globaux */
+
+    *, ::before, ::after
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+    }
+
+/* Container principal */
+
+    .pokedex
+    {
+        margin: 0 auto;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+/* Titre */
+
+    h1
+    {
+        margin: 30px 0 15px;
+        font-size: 2em;
+        color: whitesmoke;
+    }
+
+/* Formulaire */
+
+    .pokedex-form
+    {
+        max-width: 700px;
+        width: 70%;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Input recheche & bouton */
+
+    .label-recherche
+    {
+        position: absolute;
+        padding-left: 15px;
+        color: #333;
+        font-size: 1em;
+        transition: all 0.8s ease-in;
+    }
+
+    .pokedex-form:focus-within .label-recherche, .pokedex-form.active-input label
+    {
+        top: -45%;
+        color: whitesmoke;
+    }
+
+    #recherche, .btn-recherche
+    {
+        border: none;
+        outline: none;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 0 10px;
+        margin: auto 5px;
+    }
+
+    #recherche
+    {
+        width: 100%;
+    }
+
+/* Afficher pokémons */
+
+    .afficher-pokedex
+    {
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px;
+        position: relative;
+    }
+
+    /* Loader */
+
+    .loader
+    {
+        display: none;
+    }
+
+    /* Cases pokémon*/
+
+    .cases-container
+    {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pokemon
+    {
+        width: 200px;
+        min-width: 150px;
+        height: 150px;
+        min-height: 100px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*Loader */
+
+    .loader
+    {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
