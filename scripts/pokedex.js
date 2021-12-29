@@ -3,7 +3,6 @@
     const form = document.querySelector('.pokedex-form');
     const inputRecherche = document.querySelector('#recherche');
     const labelRecherche = document.querySelector('.label-recherche');
-    // const btnRecherche = document.querySelector('.btn-recherche');
     const casesPokemon = document.querySelector('.cases-container');
     const chargement = document.querySelector('.loader');
     let listeMaxPokedex = 151;
@@ -212,18 +211,3 @@ function recherche()
         }
     }
 }
-
-/* Bouton */
-
-    /*btnRecherche.addEventListener('click', (e) => 
-    {
-        e.preventDefault();
-        afficherPokemon();
-        
-    });
-
-    btnRecherche.addEventListener('submit', (e) =>
-    {
-        e.preventDefault();
-        recherche();
-    })*/
